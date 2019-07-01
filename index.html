@@ -1,8 +1,28 @@
 <html>
 <head>
-    <title></title>
+    <title>React App</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 </head>
 <body>
-    
+    <div id='app'></div>
+
+    <script>
+        const headerElement = React.createElement(
+            'h1',
+            {id: 'header'},
+            'Jen'
+        )
+
+        console.log('headerElement', headerElement)
+
+        ReactDOM.render(
+            headerElement,
+
+        )
+    </script>
+
 </body>
 </html>
+
+45:00
