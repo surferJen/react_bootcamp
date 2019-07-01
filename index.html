@@ -8,21 +8,33 @@
     <div id='app'></div>
 
     <script>
-        const headerElement = React.createElement(
+        const name = 'Jen'
+        const handle = '@surferJen';
+
+        const nameElement = React.createElement(
             'h1',
-            {id: 'header'},
-            'Jen'
+            null,
+            name
+        )
+        
+        const handleElement = React.createElement(
+            'h3',
+            null,
+            handle
         )
 
-        console.log('headerElement', headerElement)
+        const wrapperElement = React.createElement(
+            'div',
+            {id : 'container'},
+            nameElement,
+            handleElement
+        )
 
         ReactDOM.render(
-            headerElement,
-
+            wrapperElement,
+            document.getElementById('app')
         )
     </script>
 
 </body>
 </html>
-
-45:00
